@@ -225,8 +225,8 @@ ul.plain li{margin-bottom:8px}
 <p class="note" id="fhelp" style="margin:0">PDF or photo, up to 5 files and 10 MB each, 25 MB in total. Include the page that shows the demand (kW) charge. You can cover your account number and payment details.</p>
 </div>
 <ul class="files" id="flist" aria-live="polite"></ul>
-<p class="lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your bill is used only for your check. It is not shared with any CSP, battery manufacturer or other company without your written permission.</p>
-<p style="margin:12px 0 0"><label style="font-weight:400"><input type="checkbox" id="consent" name="consent"> I am authorized to share this bill. I understand AmpLink will not share it with any CSP, battery manufacturer or other company without my written permission.</label></p>
+<p class="lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your bill is used only for your check, unless you opt in below to keeping anonymous figures from it. It is not shared with any CSP, battery manufacturer or other company without your written permission.</p>
+<p style="margin:12px 0 0"><label style="font-weight:400"><input type="checkbox" id="consent" name="consent"> I am authorized to share this bill. I understand AmpLink will not share it with any CSP, battery manufacturer or other company without my written permission.</label></p><div class="dc"><p style="margin:16px 0 0"><label style="font-weight:400"><input type="checkbox" id="dataConsent" name="dataConsent"> <strong>Optional:</strong> Keep my bill&rsquo;s numbers as anonymous data. I agree that AmpLink may keep the figures from my bill (utility, rate name, demand charge, peak kW, monthly kWh, my facility type, size range and state) after removing my name, company, address and account number, and use them in combined benchmarks that AmpLink may share or sell. If I leave this unchecked, my free bill check is exactly the same.</label></p><p class="note dcnote"><strong>How anonymous data works.</strong> We never sell your bill, your name or your company. If you say yes, we keep only the numbers on your bill, with everything that identifies you removed, and blend them with numbers from other facilities. We publish or sell a figure only when it combines at least five different facilities, so no one can pick you out. This is separate from introductions: we introduce you to a provider only with your written permission. You can change your mind any time through this contact form. We&rsquo;ll remove your record from future reports, though we can&rsquo;t pull a figure out of a report that has already been published. This is how we learn which utilities and rates matter most, and it is one way we&rsquo;re paid, alongside provider and developer referrals. See our <a href="privacy.html">Privacy Policy</a>.</p></div>
 </div>
 <div id="cst" class="status" role="status" hidden></div>
 <div><button class="btn" type="submit" id="send">Send message</button></div>
@@ -293,7 +293,7 @@ function sync(){
   for(i=0;i<facEls.length;i++)facEls[i].hidden=!f;
   for(i=0;i<othEls.length;i++)othEls[i].hidden=f;
   $('msg').placeholder=f?'Anything we should know about your site?':'Tell us what you are looking for.';
-  if(!f){fin.value='';fl.innerHTML='';}
+  if(!f){fin.value='';fl.innerHTML='';$('dataConsent').checked=false;}
 }
 var map={facility:FAC,developer:'Developer / EPC',manufacturer:'Battery manufacturer / battery company',csp:'CSP / demand response provider'};
 var q=new URLSearchParams(location.search).get('type');
@@ -310,7 +310,7 @@ function toFI(){
   if(isFac()){
     if(g('utility'))o.append('fi-text-utility',g('utility'));
     for(var i=0;i<fin.files.length;i++)o.append('fi-file-bill[]',fin.files[i]);
-    if(fin.files.length&&$('consent').checked)o.append('fi-text-consent','yes');
+    if(fin.files.length&&$('consent').checked){o.append('fi-text-consent','yes');o.append('fi-text-dataConsent',$('dataConsent').checked?'yes':'no');o.append('fi-text-dataConsentVersion','v1');}
   }
   return o;
 }
