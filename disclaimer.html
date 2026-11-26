@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0A0C0B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='8' fill='%23F2F3F2' stroke='%234A524E' stroke-width='2.4'/%3E%3Ccircle cx='21' cy='16' r='8' fill='%238E9893' fill-opacity='.9'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11.5' cy='16' r='8' fill='none' stroke='%23F2F3F2' stroke-width='2.4'/%3E%3Ccircle cx='20.5' cy='16' r='8' fill='none' stroke='%238E9893' stroke-width='2.4'/%3E%3C/svg%3E">
 <title>Disclaimer | AmpLink Energy Partners</title>
 <meta name="description" content="AmpLink connects commercial and industrial sites across the U.S. with battery storage and demand response providers, supplies site leads to developers, and helps battery makers sell through channel partner programs.">
 <meta name="robots" content="index,follow">
@@ -171,25 +171,23 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 .col{padding-top:36px}
 @media(max-width:980px){.hero{padding:40px 0 48px}}
 
-.steps{list-style:none;margin:0 0 64px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #343C38}
-.steps li{padding:28px 32px 8px 0;margin-right:32px;border-right:1px solid #222826}
-.steps li:last-child{border-right:0;margin-right:0}
-.steps .n{display:inline-grid;place-items:center;width:34px;height:34px;border:1.5px solid #8FD3FF;border-radius:50%;color:#8FD3FF;font-weight:700;font-size:15px;margin-bottom:16px}
-.steps h3{margin:0 0 8px;font-size:21px;letter-spacing:-.01em}
-.steps p{margin:0;color:#A5AEAA;font-size:16px}
-.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
-.twocol h3{margin:0 0 10px;font-size:21px;letter-spacing:-.01em}
-.twocol p{margin:0 0 12px;color:#A5AEAA}
-ul.plain{padding-left:20px;margin:8px 0;color:#C9D0CC}
-ul.plain li{margin-bottom:8px}
-@media(max-width:980px){.steps{grid-template-columns:1fr}.steps li{border-right:0;margin-right:0;border-bottom:1px solid #222826;padding:28px 0}.twocol{grid-template-columns:1fr;gap:36px}}
+.brand:hover{color:#fff}
+.faqwrap details:first-child{border-top:1px solid #343C38}
+.whygrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:64px;align-items:center}
+.why1{border-top:1px solid #343C38;padding:20px 0 22px}
+.why1 h3{margin:0 0 6px;font-size:21px;letter-spacing:-.01em}
+.why1 p{margin:0;color:#A5AEAA;font-size:16px;max-width:42ch}
+.whygrid .note{margin:14px 0 0}
+.chartfig{margin:0}
+.chartfig svg{display:block;width:100%;height:auto}
+@media(max-width:980px){.whygrid{grid-template-columns:1fr;gap:36px}}
 
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="pg">
-<header><div class="nav"><a class="brand" href="index.html" aria-label="AmpLink Energy Partners home"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="16" r="8" fill="#F2F3F2" stroke="#4A524E" stroke-width="2.4"/><circle cx="21" cy="16" r="8" fill="#8E9893" fill-opacity=".9"/></svg>AmpLink</a>
+<header><div class="nav"><a class="brand" href="index.html" aria-label="AmpLink Energy Partners home"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11.5" cy="16" r="8" fill="none" stroke="#F2F3F2" stroke-width="2.4"/><circle cx="20.5" cy="16" r="8" fill="none" stroke="#8E9893" stroke-width="2.4"/></svg>AmpLink</a>
 <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a class="cta" href="contact.html">Contact</a></li></ul></div></header>
 <main id="main">
 
@@ -202,8 +200,21 @@ ul.plain li{margin-bottom:8px}
 <p>AmpLink Energy Partners LLC is a lead generation, origination and channel marketing business. We do not install, own or finance energy equipment, and we are not a utility, energy supplier, engineering firm, or law or tax advisor.</p>
 <h2>Examples are not guarantees</h2>
 <p>Savings and revenue figures on this site are illustrative examples and not guarantees. Results depend on your site, rates and program rules. The savings range in your one-page read is an estimate based on the bill you send and typical program rules.</p>
-<h2>Compensation</h2>
-<p>We may receive compensation from the CSPs, battery manufacturers and developers to whom we refer sites or for whom we generate leads. We tell you who an introduction goes to and whether we may be compensated by them. We may also earn revenue from anonymized, combined benchmarks built from bills whose owners opted in. Benchmarks describe the facilities in them and are not a guarantee of results at any other site.</p>
+<h2>How we get paid</h2>
+<p>The bill check is free to you. We may be paid by the CSPs, battery manufacturers and developers to whom we refer sites or for whom we generate leads. Before any introduction, we tell you who it goes to and whether we may be paid by them.</p>
+<p>We may also sell anonymized, combined benchmarks built only from bills whose owners opted in (see below).</p>
+<p>Your bill is never shared with anyone without your written permission.</p>
+<h2 id="anonymous-data">How anonymous data works</h2>
+<p>If you check the optional box on our bill-check form, we keep only the numbers on your bill (utility, rate name, demand charge, peak kW, monthly kWh, your facility type, size range and state), with your name, company, address and account number removed, and blend them with numbers from other facilities.</p>
+<ul>
+<li>We never sell your bill, your name or your company.</li>
+<li>We publish or sell a figure only when it combines at least five different facilities, so no one can pick you out.</li>
+<li>This is separate from introductions: we introduce you to a provider only with your written permission.</li>
+<li>You can change your mind any time through our <a href="contact.html">contact form</a>. We&rsquo;ll remove your record from future reports, though we can&rsquo;t pull a figure out of a report that has already been published.</li>
+<li>This is how we learn which utilities and rates matter most, and it is one way we&rsquo;re paid, alongside provider and developer referrals.</li>
+<li>Leaving the box unchecked changes nothing about your free bill check.</li>
+</ul>
+<p>Benchmarks describe the facilities in them and are not a guarantee of results at any other site. See our <a href="privacy.html">Privacy Policy</a>.</p>
 <h2>Programs</h2>
 <p>Program names, such as ISO-NE or PJM demand response, ConnectedSolutions and Mass Save, are referenced for information only. We are not affiliated with or endorsed by any grid operator, utility or any program administrator. Program terms change, so verify current details with the provider or administrator.</p>
 </div></div></section>
