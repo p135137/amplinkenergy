@@ -20,8 +20,8 @@
 
 body{margin:0;background:#0A0C0B}
 *{box-sizing:border-box}
-a{color:#8FD3FF;text-underline-offset:3px}
-a:hover{color:#BFE4FA}
+a{color:#A592FF;text-underline-offset:3px}
+a:hover{color:#CDC3FF}
 [hidden]{display:none!important}
 .pg{display:flex;flex-direction:column;min-height:0px;background:#0A0C0B;color:#EDEFEE;font-family:'AmpLink Sans','DM Sans',system-ui,sans-serif;line-height:1.6;font-size:17px}
 .pg main{flex:1 0 auto}
@@ -32,12 +32,12 @@ a:hover{color:#BFE4FA}
 .nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0;font-size:15px}
 .nav ul a{color:#C9D0CC;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
 .nav ul a:hover{color:#fff}
-.nav ul a[aria-current=page]{color:#fff;border-bottom-color:#8FD3FF}
-.nav ul a.cta{color:#8FD3FF;font-weight:700}
-.btn{display:inline-block;font:inherit;font-weight:700;font-size:16px;background:#8FD3FF;color:#0A0C0B;padding:13px 26px;border-radius:999px;text-decoration:none;border:2px solid #8FD3FF;cursor:pointer}
-.btn:hover{background:#BFE4FA;border-color:#BFE4FA;color:#0A0C0B}
-.btn.ghost{background:transparent;color:#8FD3FF}
-.btn.ghost:hover{background:rgba(143,211,255,.12);color:#BFE4FA}
+.nav ul a[aria-current=page]{color:#fff;border-bottom-color:#A592FF}
+.nav ul a.cta{color:#A592FF;font-weight:700}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:16px;background:#A592FF;color:#0A0C0B;padding:13px 26px;border-radius:999px;text-decoration:none;border:2px solid #A592FF;cursor:pointer}
+.btn:hover{background:#CDC3FF;border-color:#CDC3FF;color:#0A0C0B}
+.btn.ghost{background:transparent;color:#A592FF}
+.btn.ghost:hover{background:rgba(165,146,255,.12);color:#CDC3FF}
 .sec{padding:96px 0 0}
 h2.title{font-size:clamp(1.9rem,3.6vw,2.75rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px;max-width:26ch}
 .lead{font-size:19px;color:#A5AEAA;max-width:58ch;margin:0 0 40px}
@@ -80,7 +80,7 @@ details{border-bottom:1px solid #222826;padding:18px 0}
 .faqh+details{border-top:1px solid #343C38}
 summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"";flex:none;width:9px;height:9px;border-right:2px solid #8FD3FF;border-bottom:2px solid #8FD3FF;transform:rotate(45deg);margin-top:-4px}
+summary::after{content:"";flex:none;width:9px;height:9px;border-right:2px solid #A592FF;border-bottom:2px solid #A592FF;transform:rotate(45deg);margin-top:-4px}
 details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
 details p{margin:12px 0 0;color:#A5AEAA;max-width:68ch}
 .faqwrap{max-width:820px}
@@ -93,8 +93,8 @@ form{display:grid;gap:16px;max-width:660px}
 form label,.lbl{font-weight:600;font-size:14.5px;display:block;margin-bottom:6px;color:#C9D0CC}
 form input,form select,form textarea{width:100%;padding:11px 14px;border:1px solid #343C38;border-radius:10px;font:inherit;font-size:16px;background:#111514;color:#EDEFEE}
 form input::placeholder,form textarea::placeholder{color:#6F7A75}
-form input:focus,form select:focus,form textarea:focus{border-color:#8FD3FF;outline:none;box-shadow:0 0 0 3px rgba(143,211,255,.2)}
-form select{appearance:none;-webkit-appearance:none;padding-right:38px;background:#111514 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238FD3FF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center/12px 8px}
+form input:focus,form select:focus,form textarea:focus{border-color:#A592FF;outline:none;box-shadow:0 0 0 3px rgba(165,146,255,.2)}
+form select{appearance:none;-webkit-appearance:none;padding-right:38px;background:#111514 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A592FF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center/12px 8px}
 form textarea{min-height:120px}
 form input[type=checkbox]{width:auto;margin-right:8px;transform:scale(1.2)}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -104,12 +104,12 @@ form input[type=checkbox]{width:auto;margin-right:8px;transform:scale(1.2)}
 .status{padding:12px 14px;border-radius:10px;font-size:15px}
 .drop{position:relative;border:2px dashed #3B4540;border-radius:16px;padding:28px 22px;background:#0F1211;text-align:center}
 .drop input[type=file]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;padding:0;border:0}
-.drop .up{width:34px;height:34px;stroke:#8FD3FF;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:6px}
+.drop .up{width:34px;height:34px;stroke:#A592FF;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:6px}
 .dz-t{margin:0 0 4px}
-.pick{color:#8FD3FF;text-decoration:underline;font-weight:600}
+.pick{color:#A592FF;text-decoration:underline;font-weight:600}
 .files{margin:10px 0 0;padding-left:20px;font-size:14px}
 .lock{display:flex;gap:8px;align-items:flex-start;font-size:14px;color:#8E9893;margin:10px 0 0}
-.lock svg{flex:none;width:16px;height:16px;margin-top:3px;stroke:#8FD3FF;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lock svg{flex:none;width:16px;height:16px;margin-top:3px;stroke:#A592FF;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .billwrap{margin-bottom:28px}
 .card{border:1px solid #222826;border-radius:14px;padding:26px;background:#111514}
 .card h2,.card h3{margin:0 0 10px;font-size:20px;letter-spacing:-.01em}
@@ -135,14 +135,14 @@ form input[type=checkbox]{width:auto;margin-right:8px;transform:scale(1.2)}
 .foot p{margin:0}
 
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-:focus-visible{outline:3px solid #8FD3FF;outline-offset:3px}
-.skip{position:absolute;left:-999px;top:8px;background:#8FD3FF;color:#0A0C0B;padding:8px 14px;z-index:99;border-radius:6px}
+:focus-visible{outline:3px solid #A592FF;outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:#A592FF;color:#0A0C0B;padding:8px 14px;z-index:99;border-radius:6px}
 .skip:focus{left:8px}
 .brand{display:flex;align-items:center;gap:10px}
 .brand svg{width:32px;height:32px;flex:none}
 .status.ok{background:#0F2A1C;border:1px solid #2E9E69;color:#CFF3DF;font-weight:600}
 .status.bad{background:#2E1513;border:1px solid #D9534F;color:#FFD6D2}
-.drop.over{background:#14201C;border-color:#8FD3FF}
+.drop.over{background:#14201C;border-color:#A592FF}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media(max-width:980px){
  .three{grid-template-columns:1fr}
@@ -194,7 +194,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 .tier .price{margin:0;font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .tier p.price{color:#fff}
 .tier .price small{display:block;font-size:14px;font-weight:500;letter-spacing:0;color:#8E9893;margin:8px 0 0}
-.lnk{color:#8FD3FF;font-weight:600;font-size:15px;text-underline-offset:4px}
+.lnk{color:#A592FF;font-weight:600;font-size:15px;text-underline-offset:4px}
 .tier p{margin:0;color:#A5AEAA;font-size:16px}
 .tier ul{list-style:none;margin:0;padding:0;border-top:1px solid #222826}
 .tier li{padding:9px 0;border-bottom:1px solid #222826;font-size:15px;color:#C9D0CC}
@@ -206,7 +206,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 .cmp span{color:#A5AEAA;font-size:15px}
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid #343C38}
 .steps li{padding:22px 20px 0 0;border-top:0}
-.steps .n{display:block;font-size:14px;color:#8FD3FF;font-weight:700;margin-bottom:8px}
+.steps .n{display:block;font-size:14px;color:#A592FF;font-weight:700;margin-bottom:8px}
 .steps h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
 .steps p{margin:0;color:#A5AEAA;font-size:15px}
 .focus{border:1px solid #343C38;border-radius:14px;padding:32px;background:#111514;margin:0 0 44px;max-width:860px}
@@ -236,7 +236,7 @@ table.pay td.zero{color:#fff;font-weight:800;font-size:22px;letter-spacing:-.02e
 form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 .choice{display:grid;gap:10px}
 .choice label{font-weight:400;display:block;margin:0;padding:12px 14px;border:1px solid #343C38;border-radius:10px;background:#111514;cursor:pointer}
-.choice label:has(input:checked){border-color:#8FD3FF;background:#14201C}
+.choice label:has(input:checked){border-color:#A592FF;background:#14201C}
 .choice small{display:block;color:#8E9893;font-size:13.5px;margin:2px 0 0 28px}
 .utbox{border:1px solid #222826;border-radius:14px;padding:20px 22px;background:#0F1211}
 .utbox p{margin:0 0 10px;color:#A5AEAA;font-size:15.5px}
@@ -268,27 +268,31 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 .heroGrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 40px;align-items:center}
 .heroGrid .herotext h1{font-size:clamp(2.6rem,5.4vw,4.6rem)}
 .hdraw{margin:0}.hdraw svg{display:block;width:100%;height:auto}
-@media(min-width:901px){.hdraw svg{width:124%;max-width:none;margin-left:-18%}}
+@media(min-width:901px){.hdraw svg{width:112%;max-width:none;margin-left:6%}}
+@media(min-width:901px) and (max-width:1100px){.hdraw svg{width:100%;margin-left:0}}
+.btn,.btn.ghost,button.btn{border-radius:0}
 @media(max-width:900px){.heroGrid{grid-template-columns:1fr}.hdraw{max-width:520px;margin:8px auto 0}}
 #who-pays-us{border-top:1px solid #222826}
+@media(min-width:901px){.hero.heroGrid{padding:8px 0 0}.heroGrid .herotext h1{font-size:clamp(2.6rem,4.2vw,3.5rem);margin-bottom:16px}.heroGrid .herotext p{font-size:18px;line-height:1.5;margin-bottom:20px}.heroGrid .herotext .note{margin-top:12px}.sec.peek{padding-top:20px}}
+@media(min-width:901px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .three.one{grid-template-columns:1fr}.three.one .col{max-width:760px;border-left:0}
 .partnerline{margin:18px 0 0;font-size:16px}
-.stamp{display:inline-block;border:1px solid #8FD3FF;color:#8FD3FF;border-radius:999px;padding:3px 12px;font-size:13.5px;font-weight:600;margin:0 0 18px}
+.stamp{display:inline-block;border:1px solid #A592FF;color:#A592FF;border-radius:999px;padding:3px 12px;font-size:13.5px;font-weight:600;margin:0 0 18px}
 .sample{width:100%;border-collapse:collapse;margin:12px 0 8px;font-size:17px}
 .sample th,.sample td{text-align:left;padding:12px 16px 12px 0;border-bottom:1px solid #222826;vertical-align:top}
 .sample th{font-weight:600;color:#8E9893;font-size:14px;width:34%}
 .sample td{color:#EDEFEE}
-.verdict{border:1px solid #8FD3FF;border-radius:14px;padding:22px 24px;margin:28px 0}
+.verdict{border:1px solid #A592FF;border-radius:14px;padding:22px 24px;margin:28px 0}
 .verdict h3{margin:0 0 6px;font-size:22px}.verdict p{margin:0;color:#C9D0CC}
 @media(prefers-reduced-motion:no-preference){.bdraw .padfill>polygon:first-child{animation:padp 3.2s ease-in-out infinite alternate}}
-@keyframes padp{from{fill:rgba(143,211,255,.06)}to{fill:rgba(143,211,255,.22)}}
+@keyframes padp{from{fill:rgba(165,146,255,.06)}to{fill:rgba(165,146,255,.22)}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="pg">
 <header><div class="nav"><a class="brand" href="index.html" aria-label="AmpLink Energy Partners home"><svg viewBox="0 0 32 32" aria-hidden="true"><line x1="16" y1="7.51" x2="6.22" y2="24.45" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="7.51" x2="25.78" y2="24.45" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/><line x1="6.22" y1="24.45" x2="25.78" y2="24.45" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/><circle cx="16" cy="7.51" r="3.3" fill="#fff"/><circle cx="6.22" cy="24.45" r="3.3" fill="#fff"/><circle cx="25.78" cy="24.45" r="3.3" fill="#fff"/></svg>AmpLink</a>
-<ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="work-with-us.html">Work with us</a></li><li><a class="cta" href="contact.html">Contact</a></li></ul></div></header>
+<ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="work-with-us.html">For partners</a></li><li><a class="cta" href="contact.html">Contact</a></li></ul></div></header>
 <main id="main">
 
 <!-- DRAFT for attorney review. Confirm the effective date, the retention periods, the 30-day withdrawal window, the no-analytics statement and the service-agreement sharing match what you actually do. -->
@@ -320,7 +324,7 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 
 <h2>When we share it</h2>
 <ul>
-<li><strong>CSPs, battery manufacturers and developers.</strong> We do not share your bill or your contact details with a CSP, battery manufacturer, developer or any other company without your written permission. If you sign our service agreement, we send your site details and, where needed, your bill to the providers invited to bid, and we tell you who they are. We also tell you who pays us and on what terms.</li>
+<li><strong>CSPs, battery manufacturers and developers.</strong> We do not share your bill or your contact details with a battery provider, battery manufacturer, developer or any other company without your written permission. If you sign our service agreement, we send your site details and, where needed, your bill to the providers invited to bid, and we tell you who they are. We also tell you who pays us and on what terms.</li>
 <li><strong>Service providers.</strong> Companies that help us operate, such as website hosting, file handling, email, scheduling, e-signature and customer-record tools. They may use your information only to provide services to us.</li>
 <li><strong>Legal and business reasons.</strong> When the law requires it, to protect our rights, or in a sale or transfer of our business.</li>
 </ul>
@@ -366,7 +370,7 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 
 </main>
 <footer class="foot"><div class="wrap">
-<nav aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="work-with-us.html">Work with us</a><a href="contact.html">Contact</a><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy Policy</a></nav>
+<nav aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="work-with-us.html">For partners</a><a href="contact.html">Contact</a><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy Policy</a></nav>
 <p>&copy; <span id="yr"></span> AmpLink Energy Partners LLC. All rights reserved.</p>
 </div></footer>
 </div>
