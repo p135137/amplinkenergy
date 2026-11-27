@@ -273,6 +273,7 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 .btn,.btn.ghost,button.btn{border-radius:0}
 @media(max-width:900px){.heroGrid{grid-template-columns:1fr}.hdraw{max-width:520px;margin:8px auto 0}}
 #who-pays-us{border-top:1px solid #222826}
+@media(min-width:901px){.hero.heroGrid{padding-bottom:12px}.hero.heroGrid + section.sec{padding-top:12px}.hero.heroGrid + section.sec .billsec{align-items:start}.hero.heroGrid + section.sec .billsec h2{margin-top:28px}}
 @media(min-width:901px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .three.one{grid-template-columns:1fr}.three.one .col{max-width:760px;border-left:0}
 .partnerline{margin:18px 0 0;font-size:16px}
@@ -296,14 +297,14 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 
 <section class="pagehead"><div class="wrap">
 <h1>Contact AmpLink.</h1>
-<p>Facilities can send a bill or authorize utility data for a free check. Battery providers, battery manufacturers and partners can send a note. We reply within one business day, and bill checks take up to three.</p>
+<p>Facilities can send a bill or authorize utility data for a free check. CSPs, battery manufacturers and partners can send a note. We reply within one business day, and bill checks take up to three.</p>
 </div></section>
 
 <section class="sec"><div class="wrap side">
 <div>
 <form id="cf" novalidate>
 <input type="hidden" name="form" value="contact">
-<div><label for="type">I am a</label><select id="type" name="type"><option>Business / facility owner</option><option>Battery manufacturer / battery company</option><option>Battery provider / developer</option><option>Channel partner (association, contractor, ESCO or chain)</option><option>Other</option></select></div>
+<div><label for="type">I am a</label><select id="type" name="type"><option>Business / facility owner</option><option>Battery manufacturer / battery company</option><option>CSP / developer</option><option>Channel partner (association, contractor, ESCO or chain)</option><option>Other</option></select></div>
 <div class="row2">
 <div><label for="name">Name <span class="req" aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required></div>
 <div><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
@@ -317,10 +318,10 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 <div class="fac"><label for="utility">Electric utility <span class="opt" id="utreq">(optional)</span></label><input id="utility" name="utility" placeholder="For example, National Grid or PECO"></div>
 </div>
 <div class="row2 fac">
-<div><label for="ftype">Facility type <span class="opt">(optional)</span></label><select id="ftype" name="facilityType"><option value="">Select a type</option><option>Bitcoin mining</option><option>Cold storage</option><option>Food processing</option><option>Grocery or big-box retail</option><option>Hospital</option><option>Hotel</option><option>Logistics or warehouse</option><option>Manufacturing</option><option>Renewable energy producer</option><option>School or campus</option><option>Water or wastewater</option><option>Other</option></select></div>
+<div><label for="ftype">Facility type <span class="opt">(optional)</span></label><select id="ftype" name="facilityType"><option value="">Select a type</option><option>Bitcoin mining</option><option>Cold storage</option><option>Food processing</option><option>Grocery or big-box retail</option><option>Hospital</option><option>Hotel</option><option>Logistics or warehouse</option><option>Manufacturing</option><option>Office or commercial real estate</option><option>Renewable energy producer</option><option>School or campus</option><option>Water or wastewater</option><option>Other</option></select></div>
 <div><label for="peak">Monthly peak demand, kW <span class="opt">(if known)</span></label><input id="peak" name="peakKw" type="number" min="0" step="1" inputmode="numeric" placeholder="For example, 412"></div>
 </div>
-<div class="fac"><label for="interest">I&rsquo;m interested in</label><select id="interest" name="interest"><option value="bill check">A free bill check</option><option value="feasibility study">A deep feasibility study (about $1,500, refunded if you sign with a battery provider)</option></select></div>
+<div class="fac"><label for="interest">I&rsquo;m interested in</label><select id="interest" name="interest"><option value="bill check">A free bill check</option><option value="feasibility study">A deep feasibility study (about $1,500, refunded if you sign with a CSP)</option></select></div>
 <div><label for="msg">Message <span class="opt fac">(optional)</span></label><textarea id="msg" name="message"></textarea></div>
 <div class="fac">
 <span class="lbl" id="mlabel">How would you like to share your data?</span>
@@ -338,7 +339,7 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 <p class="note" id="fhelp" style="margin:0">PDF or photo, up to 5 files and 10 MB each, 25 MB in total. Include the page that shows the demand (kW) charge. You can cover your account number and payment details.</p>
 </div>
 <ul class="files" id="flist" aria-live="polite"></ul>
-<p class="lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your bill is used for your check, and anonymized figures from it go into our benchmarks under the Data terms below. It is not shared with any battery provider, battery manufacturer or other company without your written permission.</p>
+<p class="lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your bill is used for your check, and anonymized figures from it go into our benchmarks under the Data terms below. It is not shared with any CSP, battery manufacturer or other company without your written permission.</p>
 </div>
 <div class="fac utbox" id="m-ut" hidden>
 <p><strong>What happens next:</strong> we email you a secure link within one business day. You use it to authorize read-only access to this facility&rsquo;s usage data through your utility.</p>
@@ -350,7 +351,7 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 </div>
 <div id="cst" class="status" role="status" hidden></div>
 <div><button class="btn" type="submit" id="send">Send message</button></div>
-<p class="note">Free to you, with no obligation to proceed. In return, we may use anonymized figures from your bill (our Data terms). Battery providers pay AmpLink, never you, and we tell you who they are. A feasibility study is the one paid option, refunded if you sign with a battery provider, and the Data terms are optional for it. Please don't put account numbers in the message. See <a href="about.html#who-pays-us">Who pays us</a> and our <a href="privacy.html">Privacy Policy</a>.</p>
+<p class="note">Free to you, with no obligation to proceed. In return, we may use anonymized figures from your bill (our Data terms). CSPs pay AmpLink, never you, and we tell you who they are. A feasibility study is the one paid option, refunded if you sign with a CSP, and the Data terms are optional for it. Please don't put account numbers in the message. See <a href="about.html#who-pays-us">Who pays us</a> and our <a href="privacy.html">Privacy Policy</a>.</p>
 </form>
 </div>
 <aside>
@@ -360,8 +361,8 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 <ol>
 <li>Send a bill or authorize read-only utility data.</li>
 <li>Within three business days you get a one-page read: a plain yes, maybe or not yet, with an estimated savings range.</li>
-<li>If it fits, you sign a short service agreement and we collect up to three written proposals from battery providers, with a side-by-side comparison.</li>
-<li>You pick a winner, or none. Some battery providers own and operate the battery with no upfront cost to you.</li>
+<li>If it fits, you sign a short service agreement and we collect up to three written proposals from CSPs, with a side-by-side comparison.</li>
+<li>You pick a winner, or none. Some CSPs own and operate the battery with no upfront cost to you.</li>
 </ol>
 <p class="note" style="margin-top:12px">Results depend on your rate, load shape and program eligibility. Nothing here is a guarantee of savings.</p>
 </div>
@@ -370,9 +371,9 @@ form input[type=radio]{width:auto;margin-right:8px;transform:scale(1.2)}
 <div class="card">
 <h2>What to include</h2>
 <ul>
-<li><strong>Battery providers and developers:</strong> the regions and project types you want sourced.</li>
+<li><strong>CSPs and developers:</strong> the regions and project types you want sourced.</li>
 <li><strong>Battery manufacturers:</strong> your channel partner program and the products you want to place.</li>
-<li><strong>Battery providers:</strong> the states you serve and how you work with referrals.</li>
+<li><strong>CSPs:</strong> the states you serve and how you work with referrals.</li>
 <li><strong>Channel partners:</strong> who you serve and roughly how many sites or members.</li>
 </ul>
 </div>
@@ -418,7 +419,7 @@ function sync(){
   if(!f){fin.value='';fl.innerHTML='';$('dataConsent').checked=false;$('consent').checked=false;}
   if(ut){fin.value='';fl.innerHTML='';}
 }
-var map={facility:FAC,developer:'Battery provider / developer',manufacturer:'Battery manufacturer / battery company',csp:'Battery provider / developer',partner:'Channel partner (association, contractor, ESCO or chain)'};
+var map={facility:FAC,developer:'CSP / developer',manufacturer:'Battery manufacturer / battery company',csp:'CSP / developer',partner:'Channel partner (association, contractor, ESCO or chain)'};
 var params=new URLSearchParams(location.search);
 var q=params.get('type');
 if(map[q])sel.value=map[q];
